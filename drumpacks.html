@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♰ 𝐃𝐅𝐔𝐒𝐄𝐌𝐄! - 𝐃𝐑𝐔𝐌 𝐏𝐀𝐂𝐊𝐒 ♰</title>
+    <meta name="description" content="Descarga packs de batería exclusivos de DFUSEME! para tus producciones de Hard Techno.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/images/favicon/favicon_8.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+</head>
+<body>
+    <div class="filtro-ruido-tv"></div>
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="Loader"></div>
+    </div>
+
+     <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Menú principal">
+        <a href="index.html" class="logo-link" aria-label="Ir a la página principal">
+            <img src="assets/images/logo/loader.webp" alt="DFUSEME! Logo" class="logo" loading="eager" />
+        </a>
+        
+        <div class="menu-overlay" aria-hidden="true"></div>
+        
+        <button class="menu-toggle" id="mobile-menu" aria-label="Menú móvil" aria-expanded="false" aria-controls="main-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="menu-container">
+            <ul class="main-menu" id="main-menu">
+                <li><a href="index.html">CASA</a></li>
+                <li><a href="eventos.html">EVENTOS</a></li>
+                <li class="dropdown">
+                    <a href="etiqueta.html" aria-haspopup="true" aria-expanded="false">Lanzamientos <span class="dropdown-trigger" aria-hidden="true"> ⍗ </span></a>
+                    <ul class="dropdown-menu" aria-label="Submenú Lanzamientos">
+                        <li><a href="etiqueta/singles.html"><i class="fas fa-music"></i> SINGLES</a></li>
+                        <li><a href="etiqueta/eps.html"><i class="fas fa-compact-disc"></i> EPS</a></li>
+                        <li><a href="etiqueta/various.html"><i class="fas fa-layer-group"></i> VARIOUS</a></li>
+                    </ul>
+                </li>
+                <li><a href="tienda.html">TIENDA</a></li>
+                <li><a href="drumpacks.html"class="active" aria-current="page">♰ DRUM PACKS ♰</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero-drumpacks">
+            <div class="container">
+                <img src="assets/images/favicon/favicon.webp" alt="Drum Pack Cover" class="cover-image">
+                <div class="download-box">
+                <h2>✧ PACK GRATUITO DFVAULT001 ✧</h2>
+                <p><strong>Incluye:</strong> 50 archivos.wav | 20 MB</p>
+                
+                <form id="downloadForm" class="download-form">
+                    <input id="name" type="text" name="nombre" placeholder="Nombre" required>
+                    <input id="email" type="email" name="correo" placeholder="Correo electrónico" required>
+                    <button type="submit" class="download-button">Descargar Ahora</button>
+                </form>
+                </div>
+            </div>
+        </section>
+
+            <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+            <script>
+            emailjs.init('kHDhn4k4DG4h2wkY8');
+
+            const form = document.getElementById('downloadForm');
+            const downloadLink = 'https://drive.google.com/file/d/1tsXIk295tTlrmxg1u7DnyFR1xqlZAZ7b/view?usp=drive_link';
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                const btn = form.querySelector('button[type="submit"]');
+                btn.disabled = true;
+                btn.textContent = 'ESPERA...';
+
+                const serviceID = 'service_ajfv9sl';
+                const templateID = 'template_ouk54rj';
+
+                emailjs.send(serviceID, templateID, {
+                name: form.nombre.value,
+                email: form.correo.value
+                })
+                .then(() => {
+                btn.textContent = 'REDRIGIENDO ✔️';
+                // Redirigir al link de descarga después de 1 segundo
+                setTimeout(() => {
+                    window.open(downloadLink, '_blank');
+                    btn.disabled = false;
+                    btn.textContent = 'Descargar Ahora';
+                    form.reset();
+                }, 1000);
+                })
+                .catch((error) => {
+                btn.disabled = false;
+                btn.textContent = 'Descargar Ahora';
+                alert('Error al enviar el correo: ' + error.text);
+                });
+            });
+            </script>
+            <section class="number-feature">
+ 
+<section class="drum-pack-files">
+  <h2 class="drum-pack-title">✧ 50 FILES ✧</h2>
+  <div class="files-columns">
+    <ul>
+     
+      <li>5 Kick One Shot</li>
+    
+      
+    </ul>
+    <ul>
+      
+      <li>5 Open Hats One Shot</li>
+
+      <li>5 Closed Hats One Shot</li>
+    </ul>
+    <ul>
+      
+      <li>5 Ride One Shot</li>
+      
+    </ul>
+    <ul>
+      
+      <li>5 Leads vital Presets</li>
+      <li>5 Screech vital Presets</li>
+      
+    </ul>
+  </div>
+</section>
+
+        
+        <div class="daw-compatibility">
+            <h3>COMPATIBLE IN ALL DAWS</h3>
+            <img src="assets/images/logo/daws.webp" alt="DAWs Compatibles" class="daws-img">
+        </div>
+    </main>
+
+    <section class="assurance-section">
+        <div class="assurance-container">
+            <div class="assurance-block">
+                <i class="fas fa-shield-alt"></i> <!-- Icono de Calidad -->
+                <h3>⌘ CALIDAD ⌘</h3>
+                <p>100% GRÁTIS, CREADOS PARA LLEVAR TUS PRODUCCIONES AL SIGUIENTE NIVEL. CALIDAD PROFESIONAL.</p>
+            </div>
+            <div class="assurance-block">
+                <i class="fas fa-download"></i> <!-- Icono de Descargas -->
+                <h3>⌘ DESCARGAS DIRECTAS ⌘</h3>
+                <p>DESCARGA TUS PACKS AL INSTANTE, SIN ESPERAS NI COMPLICACIONES. ACCESO INMEDIATO Y DIRECTO.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+   <footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="assets/images/logo/logo_central_2.png" alt="DFUSEME!">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">✠ CASA ✠</a></li>
+                <li><a href="eventos.html">✠ EVENTOS ✠</a></li>
+                <li><a href="etiqueta.html">✠ LANZAMIENTOS ✠</a></li>
+                <li><a href="drumpacks.html">✠ DRUM PACKS ✠</a></li>
+                <li><a href="contacto.html">✠ CONTACTO ✠</a></li>
+            </ul>                
+        </div>
+        <div class="socials">
+            <a href="https://www.Facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/dfuseme_techno/?utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@dfuseme_official?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://x.com/dfuseme" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fab fa-twitter"></i></a>
+            <a href="https://soundcloud.com/dfuseme" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+        </div>
+        <p class="copyright">© 2025 DFUSEME!. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♰ 𝐃𝐅𝐔𝐒𝐄𝐌𝐄! - 𝐂𝐎𝐍𝐓𝐀𝐂𝐓𝐎 ♰</title>
+    <meta name="description" content="Contacta con DFUSEME! para booking, colaboraciones y más información.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/images/favicon/favicon_9.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader -->
+     <div class="filtro-ruido-tv"></div>
+    <div class="loader-container">
+        <div class="Loader"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Menú principal">
+        <a href="index.html" class="logo-link" aria-label="Ir a la página principal">
+            <img src="assets/images/logo/loader.webp" alt="DFUSEME! Logo" class="logo" loading="eager" />
+        </a>
+        
+        <div class="menu-overlay" aria-hidden="true"></div>
+        
+        <button class="menu-toggle" id="mobile-menu" aria-label="Menú móvil" aria-expanded="false" aria-controls="main-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="menu-container">
+            <ul class="main-menu" id="main-menu">
+                <li><a href="index.html">CASA</a></li>
+                <li><a href="eventos.html">EVENTOS</a></li>
+                <li class="dropdown">
+                    <a href="etiqueta.html" aria-haspopup="true" aria-expanded="false">Lanzamientos <span class="dropdown-trigger" aria-hidden="true"> ⍗ </span></a>
+                    <ul class="dropdown-menu" aria-label="Submenú Lanzamientos">
+                        <li><a href="etiqueta/singles.html"><i class="fas fa-music"></i> SINGLES</a></li>
+                        <li><a href="etiqueta/eps.html"><i class="fas fa-compact-disc"></i> EPS</a></li>
+                        <li><a href="etiqueta/various.html"><i class="fas fa-layer-group"></i> VARIOUS</a></li>
+                    </ul>
+                </li>
+                <li><a href="tienda.html">TIENDA</a></li>
+                <li><a href="drumpacks.html">DRUM PACKS</a></li>
+                <li><a href="contacto.html"class="active" aria-current="page">♰ CONTACTO ♰</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-contact">
+        <div class="hero-contact-bg">
+            <img src="assets/images/backgrounds/background_5.webp" alt="" class="bg-image">
+            <div class="bg-overlay"></div>
+        </div>
+        <div class="hero-contact-content">
+            <img src="assets/images/logo/logo_central_2.png" alt="DFUSEME!" class="contact-logo">
+            <h1>CONTACTO</h1>
+            <p class="hero-subtitle">Conecta con DFUSEME!</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <main class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>⌘ Email ⌘</h3>
+                    <p>dfusemetechno@gmail.com</p>
+                    <a href="mailto:dfusemetechno@gmail.com" class="contact-link">Enviar mensaje <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>⌘ Booking ⌘</h3>
+                    <p>dfusemetechno@gmail.com</p>
+                    <a href="mailto:dfusemetechno@gmail.com" class="contact-link">Contactar agente <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <h2 style="text-align: center;">✧ Formulario de Contacto ✧</h2>
+
+                <p class="form-subtitle" style="text-align: center;">Envíanos tu mensaje y te responderemos pronto</p>
+
+                
+                <form action="https://formspree.io/f/xzzrknge" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <select name="asunto" required>
+                            <option value="" disabled selected>Asunto</option>
+                            <option>Booking</option>
+                            <option>Colaboraciones</option>
+                            <option>Prensa</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">ENVIAR MENSAJE <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+   <footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="assets/images/logo/logo_central_2.png" alt="DFUSEME!">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">✠ CASA ✠</a></li>
+                <li><a href="eventos.html">✠ EVENTOS ✠</a></li>
+                <li><a href="etiqueta.html">✠ LANZAMIENTOS ✠</a></li>
+                <li><a href="drumpacks.html">✠ DRUM PACKS ✠</a></li>
+                <li><a href="contacto.html">✠ CONTACTO ✠</a></li>
+            </ul>                
+        </div>
+        <div class="socials">
+            <a href="https://www.Facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/dfuseme_techno/?utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@dfuseme_official?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://x.com/dfuseme" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fab fa-twitter"></i></a>
+            <a href="https://soundcloud.com/dfuseme" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+        </div>
+        <p class="copyright">© 2025 DFUSEME!. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

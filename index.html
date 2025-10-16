@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♰ 𝐃𝐅𝐔𝐒𝐄𝐌𝐄! ♰</title>
+    <meta name="description" content="DFUSEME! - Proyecto de Hard Techno independiente. Descubre nuestra música, eventos y más.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" id="dynamic-favicon" href="assets/images/favicon/favicon_2.webp" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+
+</head>
+
+<!-- POPUP ÚLTIMO LANZAMIENTO - CON COVER MÁS GRANDE -->
+<div id="popup-lanzamiento" class="popup">
+  <div class="popup-content">
+    <div class="popup-header">
+      <span class="popup-close">&times;</span>
+      <h2 class="popup-title">✦ NUEVO LANZAMIENTO ✦</h2>
+      <div class="glitch-effect" data-text="DFUSEME! - WTF?">DFUSEME! - WTF?</div>
+    </div>
+    <div class="popup-body">
+      <div class="cover-container-large">
+        <img src="assets/releases/singles/release2.jpg" alt="DFUSEME! - WTF?" class="popup-cover-large">
+        <div class="cover-glow"></div>
+      </div>
+      <div class="popup-info">
+        <div class="release-details">
+          <span class="detail-item"><i class="fas fa-calendar-alt"></i> 01/10/2025</span>
+          <span class="detail-item"><i class="fas fa-music"></i> Single</span>
+          <span class="detail-item"><i class="fas fa-clock"></i> 4:48</span>
+        </div>
+        <p class="popup-sub">Ya disponible en todas las plataformas</p>
+        <div class="popup-links">
+          <a href="https://open.spotify.com/intl-es/artist/5bSNHbefGF7FeKgbp7wjWJ" target="_blank" class="platform-link spotify">
+            <i class="fab fa-spotify"></i>
+            <span>Spotify</span>
+          </a>
+          <a href="https://music.apple.com/mx/artist/dfuseme/1821940458" target="_blank" class="platform-link apple">
+            <i class="fab fa-apple"></i>
+            <span>Apple Music</span>
+          </a>
+          <a href="https://deezer.com/mx/artist/331852901" target="_blank" class="platform-link deezer">
+            <i class="fab fa-deezer"></i>
+            <span>Deezer</span>
+          </a>
+          <a href="https://music.amazon.com.mx/artists/B0FDXK6N56/dfuseme" target="_blank" class="platform-link amazon">
+            <i class="fab fa-amazon"></i>
+            <span>Amazon Music</span>
+          </a>
+          <a href="https://soundcloud.com/dfuseme" target="_blank" class="platform-link soundcloud">
+            <i class="fab fa-soundcloud"></i>
+            <span>SoundCloud</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="popup-footer">
+      <button class="btn-close-popup">Continuar al sitio</button>
+    </div>
+  </div>
+</div>
+
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Menú principal">
+        <a href="index.html" class="logo-link" aria-label="Ir a la página principal">
+            <img src="assets/images/logo/logo-d.webp" alt="DFUSEME! Logo" class="logo" loading="eager" />
+        </a>
+        
+        <div class="menu-overlay" aria-hidden="true"></div>
+        
+        <button class="menu-toggle" id="mobile-menu" aria-label="Menú móvil" aria-expanded="false" aria-controls="main-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="menu-container">
+            <ul class="main-menu" id="main-menu">
+                <li><a href="index.html" class="active" aria-current="page">♰ CASA ♰</a></li>
+                <li><a href="eventos.html">EVENTOS</a></li>
+                <li class="dropdown">
+                    <a href="etiqueta.html" aria-haspopup="true" aria-expanded="false">Lanzamientos <span class="dropdown-trigger" aria-hidden="true"> ⍗ </span></a>
+                    <ul class="dropdown-menu" aria-label="Submenú Lanzamientos">
+                        <li><a href="etiqueta/singles.html"><i class="fas fa-music"></i> SINGLES</a></li>
+                        <li><a href="etiqueta/eps.html"><i class="fas fa-compact-disc"></i> EPS</a></li>
+                        <li><a href="etiqueta/various.html"><i class="fas fa-layer-group"></i> VARIOUS</a></li>
+                    </ul>
+                </li>
+                <li><a href="tienda.html">TIENDA</a></li>
+                <li><a href="drumpacks.html">DRUM PACKS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+            <source src="assets/video/background-loop.mp4" type="video/mp4">
+            <!-- Fallback si el video no carga -->
+            <img src="assets/images/backgrounds/background_1.webp" alt="Fondo de eventos DFUSEME!">
+        </video>
+        </div>
+        <div class="hero-overlay">
+            <img src="assets/images/logo/logo_central_2.png" alt="DFUSEME!" class="central-logo">
+            <p class="hero-subtitle">HARD TECHNO</p>
+            <a href="#about-section" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- About Section -->
+        <section id="about-section" class="about-section">
+        <div class="container">
+            <h2 style="text-align: center;">✧ ACERCA DE MÍ / CONÓCEME ✧</h2>
+            <div class="about-grid">
+           <div class="about-text" style="text-align: justify;">
+                <p><strong>DFUSEME!</strong> es un proyecto independiente que nace en 2021 con la visión de transformar la escena underground mediante sonidos intensos, crudos y sin etiquetas.</p>
+                <p>Creado por Bryan Romero, productor, DJ y artista influenciado por géneros como <strong>Metal</strong>, <strong>Hard Techno</strong> y <strong>Dubstep</strong>, DFUSEME! desafía los límites de los estilos tradicionales con una propuesta innovadora y personal.</p>
+                <p>Inspirado por artistas como <em>Fantasm</em>, <em>Karah</em>, <em>Ush</em> y otros referentes, este proyecto construye una identidad única dentro del universo musical alternativo.</p>
+                <p>Uno de sus shows más destacados fue en el Festival Internacional Quimera 2024, en Metepec, donde llevó la vibra rave a un espacio cultural y conquistó al público con un set intenso y envolvente.</p>
+            </div>
+
+
+
+            <div class="about-image">
+                <img src="assets/images/me/about-image.webp" alt="Bryan Romero" loading="lazy">
+            </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section id="mission-vision" class="section dark-section">
+    <div class="section-content">
+        <div class="two-columns">
+            <div class="column mission-column">
+                <div class="icon-box">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3>⌘ MISIÓN ⌘</h3>
+                <p>Crear y compartir un sonido agresivo, denso y experimental que represente la esencia del hard techno industrial latinoamericano, trabajando de manera independiente para inspirar a quienes comienzan desde cero y llevar la cultura rave a nuevos espacios y públicos.</p>
+            </div>
+            <div class="column vision-column">
+                <div class="icon-box">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3>⌘ VISIÓN ⌘</h3>
+                <p>Consolidarse como un referente global del hard techno, realizando un world tour, firmando con sellos que respeten su identidad sonora y colaborando con otros artistas para demostrar que la escena mexicana tiene una voz propia e impacto internacional.</p>
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- Releases Section -->
+<main class="releases-grid-section">
+    <h2 style="text-align: center;">✧ ÚLTIMOS LANZAMIENTOS ✧</h2>
+    <div class="container">        
+        <div class="releases-grid">
+            
+            <!-- Lanzamiento 1 -->
+            <div class="release-card">
+                <div class="release-cover">
+                    <img src="assets/releases/singles/release1.jpg" alt="DFUSEME! - PUSH IT">
+                </div>
+                <div class="release-info">
+                    <h3 class="release-title">DFUSEME! - PUSH IT</h3>
+                    <div class="release-meta">
+                        <span class="meta-item">
+                            <i class="fa-solid fa-music"></i> 1 Track
+                        </span>
+                        <span class="meta-item">
+                            <i class="fa-solid fa-calendar-alt"></i> 10/07/2025
+                        </span>
+                    </div>
+                    <div class="release-links">
+                        <a href="https://open.spotify.com/intl-es/album/3M0yOG39oyTZxVCk2W0700" target="_blank" class="btn-stream" aria-label="Escuchar en Spotify"><i class="fab fa-spotify"></i></a>
+                        <a href="https://music.apple.com/mx/album/push-it-single/1821940457" target="_blank" class="btn-stream" aria-label="Escuchar en Apple Music"><i class="fab fa-apple"></i></a>
+                        <a href="https://www.deezer.com/mx/album/775934131" target="_blank" class="btn-stream" aria-label="Escuchar en Deezer"><i class="fab fa-deezer"></i></a>
+                        <a href="https://music.amazon.com.mx/albums/B0FDYF32TB" target="_blank" class="btn-stream" aria-label="Escuchar en Amazon Music"><i class="fab fa-amazon"></i></a>
+                        <a href="https://soundcloud.com/dfuseme/push-it" target="_blank" class="btn-stream" aria-label="Escuchar en SoundCloud"><i class="fab fa-soundcloud"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lanzamiento 2 (nuevo) -->
+<div class="release-card">
+    <div class="release-cover">
+        <img src="assets/releases/singles/release2.jpg" alt="DFUSEME! - WTF?">
+    </div>
+    <div class="release-info">
+        <h3 class="release-title">DFUSEME! - WTF?</h3>
+        <div class="release-meta">
+            <span class="meta-item">
+                <i class="fa-solid fa-music"></i> 1 Track
+            </span>
+            <span class="meta-item">
+                <i class="fa-solid fa-calendar-alt"></i> 01/10/2025
+            </span>
+        </div>
+        <div class="release-links">
+    <a href="https://open.spotify.com/intl-es/album/66ej7m9AynVJrcv7J1BHIL?si=rJUnFbZ9SSeNd4DJa2XBYA" target="_blank" class="btn-stream" aria-label="Escuchar en Spotify">
+        <i class="fab fa-spotify"></i>
+    </a>
+    <a href="https://music.apple.com/mx/artist/dfuseme/1821940458" target="_blank" class="btn-stream" aria-label="Escuchar en Apple Music">
+        <i class="fab fa-apple"></i>
+    </a>
+    <a href="https://link.deezer.com/s/31dQMEGv3qsHK9h7ZwHJE" target="_blank" class="btn-stream" aria-label="Escuchar en Deezer">
+        <i class="fab fa-deezer"></i>
+    </a>
+    <a href="https://music.amazon.com.mx/albums/B0FRNN2KH8?marketplaceId=A1AM78C64UM0Y8&musicTerritory=MX&ref=dm_sh_Y8AdYfEXxNDBEF72JNu8JtE1J" target="_blank" class="btn-stream" aria-label="Escuchar en Amazon Music">
+        <i class="fab fa-amazon"></i>
+    </a>
+    <a href="https://on.soundcloud.com/EMLPLsRp06o4FLJElI" target="_blank" class="btn-stream" aria-label="Escuchar en SoundCloud">
+        <i class="fab fa-soundcloud"></i>
+    </a>
+</div>
+    </div>
+</div>
+
+
+        </div> <!-- fin .releases-grid -->
+
+        <div class="view-all-container">
+            <a href="etiqueta.html" class="view-all-btn">✦ VER TODOS ✦</a>
+        </div>
+    </div>
+</main>
+
+
+        
+</section>
+
+
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="assets/images/logo/logo_central_2.png" alt="DFUSEME!">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="index.html">✠ CASA ✠</a></li>
+                <li><a href="eventos.html">✠ EVENTOS ✠</a></li>
+                <li><a href="etiqueta.html">✠ LANZAMIENTOS ✠</a></li>
+                <li><a href="drumpacks.html">✠ DRUM PACKS ✠</a></li>
+                <li><a href="contacto.html">✠ CONTACTO ✠</a></li>
+            </ul>                
+        </div>
+        <div class="socials">
+            <a href="https://www.Facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/dfuseme_techno/?utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@dfuseme_official?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://x.com/dfuseme" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fab fa-twitter"></i></a>
+            <a href="https://soundcloud.com/dfuseme" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+        </div>
+        <p class="copyright">© 2025 DFUSEME!. Todos los derechos reservados.</p>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
